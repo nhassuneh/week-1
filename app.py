@@ -1,5 +1,5 @@
 import streamlit as st
-from apputil import palindrom, parentheses
+from apputil import palindrome, parentheses
 
 st.write(
 '''
@@ -14,7 +14,7 @@ st.subheader("Palindrome Detector")
 word = st.text_input("Enter a word or phrase:")
 
 if word:
-    st.write("Is palindrome?:", palindrom(word))
+    st.write("Is palindrome?:", palindrome(word))
 
 # Text input for parentheses
 st.subheader("Parentheses Validator")
