@@ -1,16 +1,15 @@
-
-
 # add code below ...
 import string
 
-#exercise 1
-def palindrom(word):
-    #lowercase and remove spaces
+
+# exercise 1
+def palindrome(word):
+    # lowercase and remove spaces
     clean_word = word.lower().replace(" ", "")
-    #remove punctuation
+    # remove punctuation
     for p in string.punctuation:
         clean_word = clean_word.replace(p, "")
-    #flip the word to check if it is a palindrome
+    # flip the word to check if it is a palindrome
     return_value = clean_word[::-1]
 
     print("Cleaned string:", clean_word)
@@ -18,24 +17,25 @@ def palindrom(word):
 
     return return_value == clean_word
 
-#exercise 2
+
+# exercise 2
 def parentheses(sequence):
-    #parentheses counter
+    # parentheses counter
     counter = 0
-    #take input
+    # take input
     input = sequence
-    #convert input to list
+    # convert input to list
     my_list = list(input)
-    #Loop through list
-    #parentheses add or subtract from counter
+    # Loop through list
+    # parentheses add or subtract from counter
     for i in my_list:
-        if i == "(" :
+        if i == "(":
             counter += 1
-        elif i == ")" :
+        elif i == ")":
             counter -= 1
         if counter < 0:
             return False
-    #return true if counter is 0, else false
+    # return true if counter is 0, else false
     if counter == 0:
         return True
     else:
