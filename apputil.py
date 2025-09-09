@@ -4,6 +4,15 @@ import string
 
 # exercise 1
 def palindrome(word):
+    """
+    Check if a given word or phrase is a palindrome.
+    
+    Args:
+        word (str): The word or phrase to check for palindrome property.
+    
+    Returns:
+        bool: True if the word is a palindrome, False otherwise.
+    """
     # lowercase and remove spaces
     clean_word = word.lower().replace(" ", "")
     # remove punctuation
@@ -20,6 +29,15 @@ def palindrome(word):
 
 # exercise 2
 def parentheses(sequence):
+    """
+    Check if parentheses in a sequence are properly balanced.
+    
+    Args:
+        sequence (str): A string containing parentheses and other characters.
+    
+    Returns:
+        bool: True if parentheses are balanced, False otherwise.
+    """
     # parentheses counter
     counter = 0
     # take input
